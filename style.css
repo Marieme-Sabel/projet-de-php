@@ -1,0 +1,171 @@
+body{
+    background-image: url(./image/code.jpeg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+    
+}
+
+main{
+    border-radius: 15px;
+}
+
+
+
+a:hover{
+    background-color: #d61c85;
+}
+
+.liens{
+    text-decoration: none;
+    background-color: #1faef0de;
+    padding: 0.5rem;
+    border-radius: 40px ;
+}
+
+
+
+* {
+  margin: 0.5;
+  padding: 0.5;
+  box-sizing: border-box;
+}
+
+
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  color: white;
+  text-align: center;
+
+}
+
+.hero h1 {
+  font-size: 3.5rem;
+}
+.hero h2 {
+  font-size: 2.5rem;
+}
+
+
+
+.highlight {
+  color: #ffd60a;
+}
+
+
+
+
+
+
+
+
+
+
+
+.accueil{
+    display: flex;
+    justify-content: center;
+    font-size: 1.3rem;
+    
+}
+a:hover{
+    background-color: #d61c85;
+}
+
+.gomis{
+    display: flex;
+    justify-content: center;
+    font-size: 1.6rem;
+    color: white;
+    text-decoration: none;
+    border: 3px #3f37c9 solid;
+    border-radius: 40px;
+    padding: 0.5rem;
+    background-color: rgb(16, 14, 146);
+    margin: auto;
+    align-items: center;
+    width: 10%;
+    text-align: center;
+
+}
+.photo{
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+   display: block;
+    margin: 30px auto;
+    border-radius: 50%; 
+}
+
+
+.about{
+    display: flex;
+    justify-content: center;
+    font-size: 1.3rem;
+}
+.competences{
+    font-size: 1.3rem ;
+    background-color: #00b4d8;
+}
+
+.c-photo{
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+   display: block;
+    margin: 30px auto;
+    border-radius: 10%; 
+    
+}
+
+
+.projets{
+    display: flex;
+    justify-content: center;
+    font-size: 1.3rem;
+  
+}
+.sabel-container{
+display: flex;
+gap: 30px;
+background-color: #00b4d8;
+}
+.sabel{
+    border: rgb(228, 227, 237) solid 1.1px;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 5px 5px 5px #05258e;
+    padding: 10px;
+    border-radius: 20px;
+
+    overflow: hidden;
+}
+.sabel-image{
+    width: 400px;
+}
+.sabel-image:hover{
+    transform: scale(1.1);
+}
+
+
+
+
+.contact{
+    display: flex;
+    justify-content: center;
+    column-gap: 5px;
+    font-size: 1.3rem;
+   
+
+}
+.belle:hover{
+    background-color: #d80097;
+}
+.bel{
+   background-color: #00b4d8;
+}
