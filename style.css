@@ -535,7 +535,7 @@ img {
   gap: 20px;
 }
 .stat-card, .skill-card {
-  flex: 1 1 200px; /* minimum 200px puis s’adapte */
+  flex: 1 1 100px; /* minimum 200px puis s’adapte */
 }
 /* Tablette */
 @media (max-width: 768px) {
