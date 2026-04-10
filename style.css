@@ -252,21 +252,21 @@ footer{
 
 .project-container {
     display: flex;
-    gap: 1.25rem;
+    gap: 20px;
     flex-wrap: wrap;
     justify-content: center;
 }
 
 .project-card {
-    width: 15.625rem;
+    width: 250px;
     background: #1e293b;
-    padding: 1.25rem;
-    border-radius: 0.625rem;
+    padding: 15px;
+    border-radius: 10px;
 }
 
 .project-card img {
     width: 100%;
-    border-radius: 0.625rem;
+    border-radius: 10px;
 }
 
 /* BLOG HERO */
