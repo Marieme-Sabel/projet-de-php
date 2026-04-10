@@ -524,8 +524,18 @@ footer{
     color: #cbd5e1;
 }
 
-.hero {
-  padding: 10vh 5vw; /* s’adapte à l’écran */
+img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 50%; /* si tu veux garder l’effet rond */
+}
+.stats-grid, .skills-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.stat-card, .skill-card {
+  flex: 1 1 200px; /* minimum 200px puis s’adapte */
 }
 /* Tablette */
 @media (max-width: 768px) {
@@ -533,8 +543,9 @@ footer{
     flex-direction: column;
     gap: 10px;
   }
-  .skills-grid {
+  .stats-grid, .skills-grid {
     flex-direction: column;
+    align-items: center;
   }
 }
 
@@ -547,5 +558,8 @@ footer{
     width: 100%;
     display: block;
     text-align: center;
+  }
+  .stat-card, .skill-card {
+    width: 90%;
   }
 }
