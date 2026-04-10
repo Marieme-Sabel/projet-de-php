@@ -430,27 +430,8 @@ footer{
         text-align: center;
     }
 }
-/* TABLETTE */
-@media (max-width: 768px) {
-    .project-container {
-        grid-template-columns: repeat(2, 1fr);
-    }
 
-    .navbar {
-        flex-direction: column;
-    }
-}
 
-/* MOBILE */
-@media (max-width: 480px) {
-    .project-container {
-        grid-template-columns: 1fr;
-    }
-
-    body {
-        font-size: 14px;
-    }
-}
 
 /* SECTION */
 .project-request {
@@ -539,6 +520,32 @@ footer{
 }
 
 .contact-info p {
-    margin: 5px 0;
+    margin: 0 0.5rem;
     color: #cbd5e1;
+}
+
+.hero {
+  padding: 10vh 5vw; /* s’adapte à l’écran */
+}
+/* Tablette */
+@media (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+  .skills-grid {
+    flex-direction: column;
+  }
+}
+
+/* Téléphone */
+@media (max-width: 480px) {
+  h1 {
+    font-size: 1.5em;
+  }
+  .btn {
+    width: 100%;
+    display: block;
+    text-align: center;
+  }
 }
