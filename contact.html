@@ -4,61 +4,129 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mon Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./style.css">
 </head>
 <body>
     <header>
-        <nav>
-            <ul class="contact">
+        <nav class="navbar">
+            <h1 class="logo">Mon Portfolio</h1>
+            <ul class="nav-links">
                 <ol><a href="./index.html" class="liens">Accueil</a></ol>
-                <ol><a href="./about.html" class="liens">À propos</a></ol>
-                <ol><a href="./projects.html" class="liens">Projet</a></ol>
+                <ol><a href="./projects.html" class="liens">Projets</a></ol>
+                <ol><a href="./contact.html" class="liens">Contact</a></ol>
             </ul>
         </nav>
     </header>
-    <main>
-        <section class="bel">
-            <form method="post" action="">
-            <fieldset>
-                <legend><h1>Formulaires</h1></legend>
-                <label for="nom">Nom :</label>
-                <input type="text" id="nom"required>
-                <label for="email"> Email :</label>
-                <input type="text" id="email"required>
-                <label for="objet">Objet :</label>
-                <input type="select" id="objet"required>
-                <p>
-                    <label for="precisions">Messages :</label>
-                    <textarea name="precisions" id="precisions" cols="40" rows="4"></textarea>
-                </p>
-            </fieldset>
-            <br>
-            <fieldset>
-                <legend><h3>Coordonnées Professionnelles</h3></legend>
-                <label for="email"> Email :</label>
-                <input type="text" id="email"required placeholder="📧emailacadèmique@exemple.com">
-                <label for="number">Numero :</label>
-                <input type="text" id="number" placeholder="📱+221xxxxxxxxx"required>
-                <br>
-                <img src="./image/icons8-call.png" alt="" class="belle">
-                <img src="./image/icons8-email.png" alt="" class="belle">
-                <br>
-                <br>
-               <a href="https://github.com/Marieme-Sabel" target="_blank">Mon GitHub</a>
-  
-  <!-- Lien vers LinkedIn -->
-  <a href="https://www.linkedin.com/in/Marieme Gomis/" target="_blank">Mon LinkedIn</a>
-   
-            </fieldset>
-            <input type="submit" value="Envoi">
-             </form>
-             </section>S
-             </main>
+   <section class="project-request">
+
+    <h2>Demande de projet</h2>
+    <br>
+    <form class="form">
+
+        <label>Nom complet</label>
+        <input type="text" placeholder="Votre nom" required>
+
+        <label>Email</label>
+        <input type="email" placeholder="Votre email" required>
+
+        <label>Type de projet</label>
+        <select required>
+            <option value="">-- Choisir --</option>
+            <option>Site vitrine</option>
+            <option>Blog</option>
+            <option>E-commerce</option>
+            <option>Application web</option>
+        </select>
+
+        <label>Budget estimé</label>
+        <input type="text" placeholder="Ex: 50 000 FCFA">
+
+        <label>Description du projet</label>
+        <textarea placeholder="Explique ton projet..." required></textarea>
+
+        <label>Délai souhaité</label>
+        <input type="text" placeholder="Ex: 2 semaines">
+
+        <button type="submit">Envoyer la demande</button>
+
+    </form>
+    <br>
+    <br>
+    <section class="projects">
+
+    <h2>Mes projets</h2>
+
+    <!-- FORMULAIRE RECHERCHE -->
+    <form class="search-form">
+        <input type="text" placeholder="Rechercher un projet (HTML, CSS...)" required>
+        <button type="submit">Rechercher</button>
+    </form>
+
+    <!-- LISTE DES PROJETS -->
+    <div class="project-container">
+
+       <div class="project-card">
+            <h3>Site Restaurant</h3>
+            <p>Technologies : HTML, CSS</p>
+        </div>
+
+        <div class="project-card">
+            <h3>Portfolio</h3>
+            <p>Technologies : HTML, CSS, JavaScript</p>
+        </div>
+
+        <div class="project-card">
+            <h3>Blog</h3>
+            <p>Technologies : HTML, CSS</p>
+        </div>
+
+    </div>
+
+</section>
+
+</section>
              <br>
-             <footer><p>&copy;2026-Tous droits réservés</p>
-                <p>Dans le cadre d'un projet académique</p>
-                <p>Création : <em><STrong>Mon Portfolio </STrong></em>
-                 &copy;2026 Mariéme Sabel Gomis</p>
+             <footer>
+                <div class="contact-info">
+
+    <h3>Mes coordonnées</h3>
+
+    <p>Email : mariemesabel@gmail.com</p>
+    <p>Téléphone : +221 78 487 85 88</p>
+    <p>Localisation : Dakar, Sénégal</p>
+</div>   
+
             </footer>
+            <footer>
+          <a href="https://marieme-sabel.github.io/projet-de-php/" target="_blank">Mon GitHub</a>
+                
+            </footer>
+            <footer>
+    <p>
+        &copy;2026 Mariéme Sabel Gomis</p>
+</footer>
 </body>
 </html>                    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
