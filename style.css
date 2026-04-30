@@ -524,7 +524,7 @@ img {
   gap: 1.25rem;
 }
 .stat-card, .skill-card {
-  flex: 1 1 100em; /* minimum 200px puis s’adapte */
+  flex: 1 1 200px;
 }
 /* Tablette */
 @media (max-width: 48rem) {
@@ -539,9 +539,9 @@ img {
 }
 
 /* Téléphone */
-@media (max-width: 30rem) {
+@media (max-width: 20rem) {
   h1 {
-    font-size: 1.5em;
+    font-size: 0.5em;
   }
   .btn {
     width: 100%;
@@ -552,3 +552,49 @@ img {
     width: 90%;
   }
 }
+
+/* bouton dark mode */
+.toggle-btn {
+    cursor: pointer;
+    margin-left: 15px;
+    font-size: 14px;
+    background: white;
+    color: #6C63FF;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+/* BUTTON */
+.btn {
+    display: inline-block;
+    background: white;
+    color: #6C63FF;
+    padding: 10px 20px;
+    margin-top: 15px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: #ddd;
+}
+/* =========================
+   ANIMATION
+========================= */
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+#theme-toggle {
+    display: none;
+}
+
+
