@@ -524,7 +524,7 @@ img {
   gap: 1.25rem;
 }
 .stat-card, .skill-card {
-  flex: 1 1 100em; /* minimum 200px puis s’adapte */
+  flex: 1 1 200px;
 }
 /* Tablette */
 @media (max-width: 48rem) {
@@ -551,4 +551,58 @@ img {
   .stat-card, .skill-card {
     width: 90%;
   }
+}
+
+
+
+
+
+/* Empêche tout débordement horizontal */
+html, body {
+  overflow-x: hidden;
+}
+
+/* Rend tous les éléments flex plus flexibles */
+* {
+  max-width: 100%;
+}
+
+/* Images toujours adaptées */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Corrige les éléments trop petits ou fixes */
+.gomis {
+  width: auto;
+  max-width: 90%;
+}
+
+/* Cartes adaptatives */
+.project-card,
+.blog-card,
+.testimonial-card {
+  width: 100%;
+  max-width: 300px;
+}
+
+/* Timeline padding sécurisé */
+.timeline-item {
+  padding: 2rem 1.5rem;
+}
+
+/* Hero texte lisible */
+.hero h1 {
+  font-size: clamp(1.5rem, 5vw, 3rem);
+}
+
+/* Empêche les flex de déborder */
+.navbar,
+.stats,
+.project-container,
+.blog-container,
+.testimonials-container,
+.footer-container {
+  flex-wrap: wrap;
 }
