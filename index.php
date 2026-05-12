@@ -1,3 +1,6 @@
+<?php
+require_once 'fonctions.php';
+?>
 <!DOCTYPE html>
 <html lang="fr">
 <head>
@@ -9,38 +12,19 @@
     
 </head>
 <body>
-    <header>
-        <nav class="navbar">
-            <h1 class="logo">Mon Portfolio</h1>
-            <ul class="nav-links">
-           <ol><a href="./index.html" class="liens">Accueil</a></ol>
-           <ol><a href="./projects.html" class="liens">Projets</a></ol>
-           <ol><a href="./contact.html" class="liens">Contact</a></ol>
-            </ul>
-              <label for="theme-toggle" class="toggle-btn">🌙 / ☀️</label>
-        </nav>
-    </header>
-
-        
-</section>
-<section clas="hero">
-    <img src="./image/ms.jpeg" alt="" width="200px" class="photo">
-
-   <header>
-    <div class="hero-content">
-      <h1>Bonjour, je suis <span class="highlight">Marieme Sabel Gomis</span></h1>
-      <h1>Développeuse PHP & MySQL</h1>
+   <?php require 'composants/navigation.php'; ?>
+<section class="hero">
+    <div class="accueil">
+    <img src="./image/ms.jpeg" alt="Photo de Marieme" width="300px" class="photo">
+      <h2>Bonjour, je suis <span class="highlight">Marieme Sabel Gomis</span></h2>
+      <h3>Développeuse PHP & MySQL</h3>
       <p>Bienvenue sur mon portfolio. Découvrez mes projets et mes compétences.</p>
+      <br>
+        <a href="./projets.php" class="gomis">Projets</a>
+
     </div>
-  </header>
-  <br>
-   <br>
-    <br>
-        <a href="./projects.html" class="gomis">Projets</a>
-    </section>
- <br>
-    <br>
-     
+
+           </section>
 <section class="stats">
     <div>
         <h3>5+</h3>
@@ -145,37 +129,8 @@
      J'aime travailler sur les systèmes embarqués, les applications webet le développement logiciel.
   </p>
   <br>
-  <br>
 </section>
- <footer>
-    <p>
-        &copy;2026 Mariéme Sabel Gomis</p>
-</footer>
-    
-    <footer class="footer">
 
-    <div class="footer-container">
-
-        <!-- Réseaux -->
-        <div class="footer-box">
-            <h3>Réseaux</h3>
-            <ul>
-                <li><a href="#">Instagram</a></li>
-                <li><a href="https://www.linkedin.com/in/Marieme Gomis/" target="_blank">LinkedIn</a></li>
-            </ul>
-        </div>
-
-        <div class="footer-box">
-            <h3>Liens</h3>
-            <ul>
-                <li><a href="https://marieme-sabel.github.io/projet-de-php/" target="_blank">GitHub</a></li>
-                <li><a href="cv.pdf" download>Télécharger mon CV</a></li>
-            </ul>
-        </div>
-
-    </div>
-
-    
-</footer>
+ <?php require 'composants/footer.php'; ?>
 </body>
-</html> 
+</html>
